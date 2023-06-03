@@ -20,7 +20,7 @@
   <body class="body">
     <!-- Шапка сайта -->
     <header class="main-header">
-      <div class="container flex header-fixed">
+      <div class="container flex page-header-container">
         <nav class="page-nav">
           <a class="link logo" href="./index.html">Web<span class="main-logo">Studio</span></a>
           <ul class="menu list">
@@ -35,6 +35,11 @@
             </li>
           </ul>
         </nav>
+        <button class="mobalie-menu-open-btn" type="button">
+          <svg class="mobile-menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <!-- Ссылки -->
         <address class="contacts">
           <ul class="list auth-nav">
@@ -47,17 +52,83 @@
           </ul>
         </address>
       </div>
-    </header>
+
+    <!-- MOBILE-MENU -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-container container">
+      <button class="mob-menu-close-btn" type="button">
+        <svg class="mobile-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      
+         <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link current link list" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link list" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link list" href="">Contacts</a>
+            </li>
+          </ul>
+           <ul class="list auth-nav">
+            
+            <li class="auth-nav-container">
+              <a class="contact-link mobile link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="auth-nav-container">
+              <a class="contact-link contact-mobile-link link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+            </li>
+          </ul>
+          
+          <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+    </div>
+         
+     
+  </div>  
+  </header>
     <!-- Главная секция. Заголовок.Кнопка -->
     <main>
-      <section class="main">
+      <!-- <section class="main">
         <div class="hero container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
       <!-- Особенности. Вложенный списк -->
-      <section class="feature-section">
+      <!-- <section class="feature-section">
         <div class="feature container">
           <h2 class="hidden" style="display: none">Peculiarities</h2>
           <ul class="list box">
@@ -112,9 +183,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- "Чем мы занимаемся" и "Наша команда" + Картинки -->
-      <section class="section-img">
+      <!-- <section class="section-img">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list list-img">
@@ -129,11 +200,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section-workers -->
 
-      <section class="section-workers">
+      <!-- <section class="section-workers">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
           <ul class="list cards-list">
@@ -302,11 +373,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section 5-->
 
-      <section class="client">
+      <!-- <section class="client">
         <div class="container">
           <h2 class="client-title">Customers</h2>
           <ul class="client-list list">
@@ -421,13 +492,13 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- modal-window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
         <p class="contact-form-title">Leave your contacts and we will call you back</p>
@@ -518,6 +589,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
