@@ -70,7 +70,7 @@ button {
 
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -153,6 +153,10 @@ button {
     position: relative;
     padding-top: 80px;
     padding-left: 40px;
+    padding-right: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .mob-menu-close-btn {
@@ -177,7 +181,7 @@ button {
 
   .menu-mobile-list {
     display: block;
-    margin-bottom: 284px;
+    margin-bottom: auto;
   }
 
   .menu-link {
@@ -191,6 +195,9 @@ button {
 
     color: var(--main-text-color);
   }
+  .studio-open {
+    color: var(--pressed-state);
+  }
 
   .menu-link:focus {
     color: var(--pressed-state);
@@ -199,12 +206,13 @@ button {
   .menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
-
+  .auth-nav {
+    margin-bottom: 48px;
+  }
   .social-list {
     display: flex;
-    justify-content: space-between;
-    gap: 56px;
-    margin-top: 48px;
+    justify-content: center;
+    gap: 30px;
   }
   .social-list-item {
     width: 40px;
@@ -230,8 +238,6 @@ button {
   }
 
   .mobile {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -239,7 +245,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--accent-color);
     display: block;
-    min-width: 353px;
+    width: 353px;
   }
 
   .auth-nav-container:not(:last-child) {
@@ -247,8 +253,6 @@ button {
   }
 
   .contact-mobile-link {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -271,6 +275,14 @@ button {
 
   .mobile-menu-open-btn-icon {
     stroke: var(--main-bg-color);
+  }
+
+  .hero-title {
+    max-width: 320px;
+  }
+
+  .feature-content:not(:last-child) {
+    margin-bottom: 72px;
   }
 }
 
@@ -300,8 +312,6 @@ button {
     padding-bottom: 24px;
   }
   .menu-link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -339,6 +349,7 @@ button {
 
   .contacts {
     display: block;
+    font-style: normal;
   }
 
   .auth-nav-container:not(:last-child) {
@@ -346,17 +357,20 @@ button {
   }
 
   .contact-link {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.17;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 
     color: var(--secondary-text-color);
 
     transition: color var(--transition-duration-and-func);
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
   }
 
   .auth-nav .contact-link:hover,
@@ -459,7 +473,15 @@ button {
   height: 432px;
   margin: 0 auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/people-office@x2.jpg');
+  }
+}
 .hero-title {
   color: var(--primery-whitecolor);
 
@@ -471,7 +493,6 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
 
-  width: 320px;
   height: 80px;
 
   margin-left: auto;
@@ -553,7 +574,7 @@ button {
   }
 
   .feature-list {
-    font-family: 'Roboto', sans-serif;
+    font-style: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -571,19 +592,12 @@ button {
   padding-bottom: 96px;
 }
 
-.feature-content {
-  width: 396px;
-}
-.feature-content:not(:last-child) {
-  margin-bottom: 72px;
-}
-
 /* PECULIARITIES (SECTION-2) TABLET STYLE */
 @media screen and (min-width: 768px) {
   .box {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .feature-title {
@@ -731,7 +745,9 @@ button {
 
 .social-worker-list {
   gap: 24px;
+  margin-top: 8px;
 }
+
 .social-list-link {
   background-color: var(--accent-color);
   display: flex;
@@ -829,7 +845,7 @@ button {
 .client-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 72px 16px;
   justify-content: center;
 }
 
@@ -863,16 +879,20 @@ button {
   fill: var(--pressed-state);
 }
 
-.client-list-item:nth-child(-n + 4) {
-  margin-bottom: 72px;
-}
-
 /*  CUSTOMERS (5 SECTION) TABLET STYLE */
 @media screen and (min-width: 768px) {
   .client-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/people-office_tablet@x2.jpg');
+  }
   .client-list-item:nth-child(4) {
     margin-bottom: 0;
   }
@@ -1110,7 +1130,6 @@ button {
     padding-right: 56px;
   }
   .subscribe-button {
-    
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
@@ -1166,8 +1185,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  min-height: 584px;
+  max-width: 392px;
+  max-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1175,6 +1194,9 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 72px;
   padding-bottom: 24px;
+  overflow: scroll;
+  width: 95%;
+  height: 95%;
 }
 
 .backdrop {
@@ -1422,7 +1444,6 @@ button {
 .priv {
   color: var(--accent-color);
 }
-
 
 /* MODAL TABLET + DESCTOP  */
 @media screen and (min-width: 768px) {
